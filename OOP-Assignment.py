@@ -1,4 +1,4 @@
-# Parent Class demonstrating a more general object
+# Parent Class demonstrating  general object
 class Device:
     """A general electronic device with basic functionality."""
     def __init__(self, brand, model):
@@ -23,7 +23,7 @@ class Smartphone(Device):
         # Call the constructor of the parent class
         super().__init__(brand, model)
         
-        # Protected attribute (by convention, a single underscore)
+        # Protected attribute 
         self._os = os
         
         # Private attribute (name mangling, two leading underscores)
@@ -53,7 +53,7 @@ class Smartphone(Device):
 
 # --- Creating and Using Objects ---
     
-# Create a new Smartphone object
+# Create  new Smartphone object
 my_phone = Smartphone("Google", "Pixel 8", "Android", 128, 48)
 
 print("\n--- Interacting with the Smartphone ---")
